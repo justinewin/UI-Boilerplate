@@ -1,0 +1,30 @@
+// mixins.scss
+
+// flexbox
+
+@mixin flexbox($direction) {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: $direction;
+}
+
+// transition
+
+$hover: all 0.4s ease-in-out 0s;
+$slide: all 0.3s cubic-bezier(0,0,.5,0,1) 0s;
+$slow-slide: all 0.3s cubic-bezier(.91,.32,.26,.98) 0s;
+$slide-delay: all 0.5s cubic-bezier(.55,0,.1,1) 0s;
+$delay-slide: all 0.5s cubic-bezier(.19,1,.22,1) 0s;
+$slide-slow: all 0.5s cubic-bezier(.55,0,.1,1) 0s;
+$zoom: all 0.7s cubic-bezier(.55,0,.1,1) 0s;
+$zoom-slow: all 2.4s cubic-bezier(.55,0,.1,1) 0s;
+
+// box-shadow
+
+@mixin box-shadow($value) {
+	box-shadow: 0 22px 30px -17px rgba(0,0,0, $value);
+	-moz-box-shadow: 0 22px 30px -17px rgba(0,0,0, $value);
+	-webkit-box-shadow: 0 22px 30px -17px rgba(0,0,0, $value);
+}
+
+
